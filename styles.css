@@ -1,0 +1,247 @@
+:root {
+  --color-white-1000: #ffffff;
+  --color-white-20: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /*as I didn't find color with opacity for dark theme border*/
+
+  --color-black-1000: #000000;
+  --color-black-950: rgba(0, 0, 0, 0.88);
+  --color-black-900: rgba(0, 0, 0, 0.82);
+  --color-black-800: rgba(0, 0, 0, 0.74);
+  --color-black-700: rgba(0, 0, 0, 0.68);
+  --color-black-600: rgba(0, 0, 0, 0.6);
+  --color-black-500: rgba(0, 0, 0, 0.5);
+  --color-black-400: rgba(0, 0, 0, 0.4);
+  --color-black-300: rgba(0, 0, 0, 0.3);
+  --color-black-200: rgba(0, 0, 0, 0.2);
+  --color-black-100: rgba(0, 0, 0, 0.12);
+
+  --color-neon-green-darker: #a3d105;
+  --color-neon-green-dark: #baee05;
+  --color-neon-green-base: #c9ff27;
+  --color-neon-green-light: #d6fc89;
+  --color-neon-green-lighter: #f1ffda;
+
+  --color-grey-950: #06050c;
+  --color-grey-900: #12101a;
+  --color-grey-800: #24222d;
+  --color-grey-700: #33313c;
+  --color-grey-600: #484652;
+  --color-grey-500: #64616e;
+  --color-grey-400: #807e8b;
+  --color-grey-300: #9f9caa;
+  --color-grey-200: #bebcca;
+  --color-grey-100: #d8d5e4;
+  --color-grey-75: #ebe9f8;
+  --color-grey-50: #f6f5fb;
+
+  --color-nightfall-translucent-800: rgba(22, 38, 72, 0.82);
+  --color-nightfall-translucent-700: rgba(43, 60, 95, 0.74);
+  --color-nightfall-translucent-600: rgba(73, 95, 133, 0.68);
+  --color-nightfall-translucent-500: rgba(130, 150, 192, 0.6);
+  --color-nightfall-translucent-300: rgba(0, 26, 82, 0.4);
+  --color-nightfall-translucent-200: rgba(0, 41, 133, 0.3);
+  --color-nightfall-translucent-100: rgba(0, 63, 204, 0.2);
+  --color-nightfall-translucent-75: rgba(22, 35, 63, 0.16);
+  --color-nightfall-translucent-50: rgba(0, 68, 214, 0.06);
+
+  --color-indigo-950: #040021;
+  --color-indigo-900: #0d0040;
+  --color-indigo-800: #1c016d;
+  --color-indigo-700: #290192;
+  --color-indigo-600: #3b01c6;
+  --color-indigo-500: #4a12f0;
+  --color-indigo-400: #6866ff;
+  --color-indigo-300: #8992fe;
+  --color-indigo-200: #aeb8ff;
+  --color-indigo-100: #ced5ff;
+  --color-indigo-75: #e6eafe;
+  --color-indigo-50: #eff1fe;
+
+  --color-primary: #01041a;
+  --bg-color-primary: #061029;
+
+  --scale-100: 1rem;
+  --scale-125: 1.25rem;
+  --scale-150: 1.5rem;
+  --scale-200: 2rem;
+  --scale-250: 2.5rem;
+  --scale-300: 3rem;
+  --scale-400: 4rem;
+  --scale-500: 5rem;
+  --scale-600: 6rem;
+  --scale-800: 8rem;
+  --scale-015: 0.125rem;
+  --scale-025: 0.25rem;
+  --scale-050: 0.5rem;
+  --scale-075: 0.75rem;
+
+  --radii-full: 999rem;
+  --radii-500: var(--scale-150);
+  --radii-400: var(--scale-100);
+  --radii-300: var(--scale-075);
+  --radii-200: var(--scale-050);
+  --radii-100: var(--scale-025);
+  --radii-50: var(--scale-015);
+
+  --space-auto: Auto;
+  --space-800: var(--scale-400);
+  --space-700: var(--scale-300);
+  --space-600: var(--scale-200);
+  --space-500: var(--scale-150);
+  --space-400: var(--scale-100);
+  --space-300: var(--scale-075);
+  --space-200: var(--scale-050);
+  --space-100: var(--scale-025);
+  --space-50: var(--scale-015);
+
+  --size-900: var(--scale-400);
+  --size-800: var(--scale-300);
+  --size-700: var(--scale-250);
+  --size-600: var(--scale-200);
+  --size-500: var(--scale-150);
+  --size-400: var(--scale-100);
+  --size-300: var(--scale-075);
+  --size-200: var(--scale-050);
+  --size-100: var(--scale-025);
+
+  --bg-color-default-base: var(--color-white-1000);
+  --bg-color-default-stronger: var(--color-grey-75);
+  --bg-color-brand-main-base: var(--color-indigo-500);
+  --bg-color-brand-main-stronger: var(--color-indigo-700);
+  --bg-color-brand-main-strongest: var(--color-indigo-800);
+
+  --fg-color-default-primary: var(--color-nightfall-950);
+  --fg-color-brand-primary-hover: var(--color-neon-green-base);
+  --fg-color-brand-primary-pressed: var(--color-neon-green-base);
+  --fg-color-inverse-primary: var(--color-white-1000);
+
+  --borderColor-translucent-lightest: var(--color-black-100);
+
+  --structure-site-bgcolor: var(--bg-color-default-stronger);
+}
+
+body {
+  font-family: "Outfit", "Noto Sans JP", sans-serif;
+  background-color: var(--color-grey-50);
+  transition: background-color 0.3s, color 0.3s;
+  color: var(
+    --color-primary
+  ); /*in root variables there is no such color as #01041A. I added it to variables*/
+  font-size: var(
+    --scale-100
+  ); /* here also the size is 14px or 0.875 originally in prototype */
+  line-height: var(
+    --scale-150
+  ); /*again there is no option for 1.25 rem or 20 px;*/
+}
+
+body.dark {
+  background-color: var(--color-primary);
+  color: var(--color-white-1000);
+}
+
+.card {
+  background-color: var(--color-white-1000);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: var(--scale-100) var(--scale-150);
+  max-width: 400px;
+  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid var(--borderColor-translucent-lightest);
+}
+
+body.dark .card {
+  background-color: var(--bg-color-primary);
+  color: var(--color-white-1000);
+  border-color: var(--color-white-20);
+}
+
+.card-header {
+  font-size: var(--scale-125);
+  font-weight: 600;
+  padding-bottom: var(--scale-100);
+}
+
+.card-block {
+  border-top: 1px solid var(--borderColor-translucent-lightest);
+  border-bottom: 1px solid var(--borderColor-translucent-lightest);
+  padding: var(--scale-100) 0;
+}
+
+body.dark .card-block {
+  border-color: var(--color-white-20);
+}
+
+.card-footer {
+  text-align: left;
+  padding-top: var(--scale-100);
+}
+
+/*Styling the button */
+
+body .btn {
+  font-size: var(--scale-100);
+  font-weight: 500;
+  background: var(--color-indigo-500);
+  color: var(--color-white-1000);
+  padding: var(--scale-025) var(--scale-075);
+  border: 1px solid transparent;
+  border-radius: var(--radii-500);
+  cursor: pointer;
+}
+
+/* Hover state */
+body .btn:hover {
+  background-color: var(--color-indigo-700);
+  color: var(--color-neon-green-base);
+}
+
+/* Active state (when the button is pressed) */
+body .btn:active {
+  background-color: var(--color-indigo-800);
+}
+
+/* Focus state with 2px border */
+body .btn:focus {
+  border-color: 2px solid var(--color-white-1000);
+  outline: var(--scale-015) solid var(--color-indigo-500);
+}
+
+/* Focus and Hover state */
+body .btn:focus:hover {
+  border-color: 2px solid var(--color-white-1000);
+  outline-color: var(--color-indigo-700);
+}
+
+body.dark .btn {
+  color: var(--color-indigo-800);
+  background-color: var(--color-indigo-300);
+}
+
+/* Hover state */
+body.dark .btn:hover {
+  color: var(--color-indigo-700);
+  background-color: var(--color-neon-green-base);
+}
+
+/* Active state (when the button is pressed) */
+body.dark .btn:active {
+  background-color: var(--color-neon-green-darker);
+}
+
+/* Focus state with 2px border */
+body.dark .btn:focus {
+  border: 2px solid var(--bg-color-primary);
+  outline: var(--scale-015) solid var(--color-indigo-300);
+}
+
+/* Focus and Hover state */
+body.dark .btn:focus:hover {
+  border: 2px solid var(--bg-color-primary);
+  outline-color: var(--color-indigo-300);
+}
